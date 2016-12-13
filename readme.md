@@ -176,7 +176,8 @@ We now have two managers, one to manage token, one to maange user's information.
 ### Managing The App
 In order to manage the app, we need two managers to help us. Aslo, we will have to determine whether user is logged in or not.
 
-```spublic protocol AppManageable {
+```swift
+public protocol AppManageable {
     var tokenManger: AccessTokenManager { get }
     /// Do all things with user' information
     var user: UserInformation { get }
