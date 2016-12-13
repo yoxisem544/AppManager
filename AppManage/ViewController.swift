@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        AppManager.shared().tokenManger.update(token: "dskfjklsdjaflkj")
+        print(AppManager.shared().tokenManger.token)
+        AppManager.shared().user.id = 1
+        print(AppManager.shared().user.id)
     }
 
     override func didReceiveMemoryWarning() {
